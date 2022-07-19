@@ -1,0 +1,20 @@
+DROP TABLE CLIENTE IF EXISTS;
+CREATE TABLE CLIENTE(
+dni INT,
+nombre VARCHAR(50),
+apellido VARCHAR(50),
+fecha_Nacimiento DATE);
+
+DROP TABLE PRODUCTO IF EXISTS;
+CREATE TABLE PRODUCTO(
+producto_Id INT,
+stock INT,
+descripcion VARCHAR(50),
+precio INT);
+
+DROP TABLE COMPROBANTE IF EXISTS;
+CREATE TABLE COMPROBANTE (
+comprobante_Id INT,
+fecha_Compra DATE,
+cantidad INT,
+total_Compra INT);
